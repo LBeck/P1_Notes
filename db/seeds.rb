@@ -1,0 +1,1 @@
+note1= Note.create(title: "First Notes", content: "This is a test of my first note")

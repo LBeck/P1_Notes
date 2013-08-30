@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Welcome to Your Notes App!</h1>
+
+<%= "Title: #{@title}" %>
+
+ <!-- How do I move this logic into note.rb? -->
+<% @notes.each do |note| %>
+<p><%= "#{note.id}. Title: #{note.title} Content: #{note.content}" %></p>
+<span><a href ="<%= note.id %>">[edit]</a></span>
+<% end %>
+
+
+ <section id="add">
+  <form action = "/" method = "post">
+    <textarea name= "title" placeholder="Your title;"></textarea>
+    <input type ="submit" value="Create me!">
+    <textarea name= "content" placeholder="Your note;"></textarea>
+  <!--   <input type ="submit" value="Take Note!"> -->
+  </form>
+</section>
+</div>

@@ -1,0 +1,8 @@
+<% if @note %>
+  <form action ="/<%= @note.id  %>/delete" method ="post">
+    <input type ="hidden" name="_method" value ="delete">
+    <p> Do you really want to delete? </p>
+    <input type ="submit" value="Delete Please!">
+    <a href = "/"> Cancel</a>
+  </form>
+<% end %>

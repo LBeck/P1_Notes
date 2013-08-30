@@ -1,0 +1,8 @@
+<% if @note %>
+<form action="<%= @note.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <textarea name ="content">change your note here</textarea>
+  <input type="submit">
+</form>
+<p><a href="<%= @note.id %>/delete">Delete</a></p>
+<% end %>
